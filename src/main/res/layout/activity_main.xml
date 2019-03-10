@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnClear"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAwn" />
 
     <Button
         android:id="@+id/btnClear"
@@ -28,7 +28,7 @@
         android:text="C"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btnClearEverything"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAwn" />
 
     <Button
         android:id="@+id/btnClearEverything"
@@ -39,7 +39,7 @@
         android:text="CE"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAwn" />
 
     <Button
         android:id="@+id/btnMultiply"
@@ -181,7 +181,7 @@
     <TextView
         android:id="@+id/tvMain"
         android:layout_width="0dp"
-        android:layout_height="102dp"
+        android:layout_height="66dp"
         android:layout_marginStart="6dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="6dp"
@@ -189,6 +189,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAwn"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
 
     <Button
         android:id="@+id/num1"
