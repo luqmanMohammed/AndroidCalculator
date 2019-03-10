@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 public class CalculationHelper {
 
-    //main calculate function. segregates the multiple operand expression. adds negative numbers if available. and calculates according to BODMAS
+    //main calculate function. segregates the multiple operand expression. adds Negative if available and calculates according to BODMAS
     public static double calculate(String expString) {
+
         double awn = 0.0;
 
         ArrayList<String> toBeCal = addNegatives(segregateExpr(expString));

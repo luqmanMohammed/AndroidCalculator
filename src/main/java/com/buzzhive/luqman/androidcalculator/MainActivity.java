@@ -67,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnEquals).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(operandLock){
+                if(!operandLock){
                     double awn = CalculationHelper.calculate(sb.toString());
                     tvAwn.setText(Double.toString(awn));
                 }
                 else {
-                    Toast t = Toast.makeText(null,"Invalid Expression",Toast.LENGTH_LONG);
+                    Toast t = Toast.makeText(getApplicationContext(),"Invalid Expression",Toast.LENGTH_LONG);
                     t.show();
                 }
             }
